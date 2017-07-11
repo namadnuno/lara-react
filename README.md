@@ -14,7 +14,7 @@ Lara-react is just a way i found to use laravel with react js in a easy way. You
 
 ``` php artisan key:generate ```
 
-``` npm install ```
+``` yarn ```
 
 ``` npm run dev ```
 

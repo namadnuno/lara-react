@@ -12,7 +12,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
     Example,
-    Home
+    Home,
+    Nav
 }  from  './components/IndexComponents';
 
 import {
@@ -25,8 +26,11 @@ import {
 ReactDOM.render(
   <Router>
       <div>
-         <Route exact path="/" component={Example} />
-         <Route path="/home" component={Home}/>
+          <Nav />
+          <div className="container">
+            <Route exact path="/" component={Home} />
+            <Route path="/example" component={Example}/>
+          </div>
       </div>
   </Router> 
 , document.getElementById('root'));

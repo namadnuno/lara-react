@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('{path?}', function () {
     return view('welcome');
-});
-
-Route::get('/home', function () {
-    return view('welcome');
-});
+})->where('path', '[\/\w\.-]*');
